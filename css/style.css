@@ -66,7 +66,7 @@ ul li {
 }
 
 ul li:nth-child(odd){
-    background-color: #b2bec3;
+    background-color:#dfe4ea ;
 }
 
 ul li:hover{
@@ -74,7 +74,33 @@ ul li:hover{
 }
 
 ul li.checked{
-    background:#888;
+    background:#ced6e0;
     color: #fff;
     text-decoration:line-through;
+}
+
+ul li.checked:before{
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top:10px;
+    left:16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+
+}
+
+.fas{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.fas:hover{
+    background-color:tomato;
+    color: #fff
 }
